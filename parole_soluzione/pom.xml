@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>it.polito.tdp</groupId>
-    <artifactId>parole</artifactId>
+    <groupId> it.polito.tdp</groupId>
+    <artifactId>parole_soluzione</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>parole</name>
+    <name>parole_soluzione</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>it.polito.tdp.parole.Main</mainClass>
+        <mainClass>it.polito.tdp.parole_soluzione.Main</mainClass>
     </properties>
 
     <organization>
@@ -37,7 +37,7 @@
 		<dependency>
 		    <groupId>org.jgrapht</groupId>
 		    <artifactId>jgrapht-core</artifactId>
-		    <version>1.4.0</version>
+		    <version>1.5.1</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.mariadb.jdbc</groupId>
@@ -53,8 +53,8 @@
 		    <groupId>org.slf4j</groupId>
 		    <artifactId>slf4j-simple</artifactId>
 		    <version>1.7.30</version>
-		    <scope>test</scope>
 		</dependency>
+
         
     </dependencies>
     <build>

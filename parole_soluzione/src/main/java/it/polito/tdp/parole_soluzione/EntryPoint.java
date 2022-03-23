@@ -1,4 +1,4 @@
-package it.polito.tdp.parole;
+package it.polito.tdp.parole_soluzione;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -16,7 +16,8 @@ public class EntryPoint extends Application {
         
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
-        
+        scene.getRoot().setStyle("-fx-font-family: 'serif'");
+
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
         stage.show();

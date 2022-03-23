@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="340.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.parole_soluzione.FXMLController">
+   <top>
+      <Label text="Lab 1 - Lista di Parole" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="Parola" />
+                  <TextField fx:id="txtParola" onAction="#doInsert" promptText="inserisci..." />
+                  <Button fx:id="btnInserisci" mnemonicParsing="false" onAction="#doInsert" text="Inserisci" />
+               </children>
+            </HBox>
+            <TextArea fx:id="txtResult" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="btnReset" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#doReset" prefHeight="57.0" prefWidth="62.0" text="Reset" />
+            <Button fx:id="btnCancella" mnemonicParsing="false" onAction="#doCancella" prefHeight="57.0" prefWidth="85.0" text="Cancella">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <TextArea fx:id="txtPerformance" prefHeight="57.0" prefWidth="200.0" promptText="perfromance...">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
